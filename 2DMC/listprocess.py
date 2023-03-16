@@ -7,7 +7,7 @@ reader = csv.reader(terrainLoad)
 for row in reader:
     load.append(row)
 
-TerrainOne, TerrainTwo, TerrainThree, CaveMap, hotbar, inventory, currentTerrain, errorList, terrainMapStorage, callLog = [list(row) for row in load]
+TerrainOne, TerrainTwo, TerrainThree, CaveMap, hotbar, inventory, currentTerrain, errorList, terrainMapStorage, callLog, x, y = [list(row) for row in load]
 
 placeableBlocks, noMoveBlocks = ['🟫', '🧮'], ['🔘', '🟪']
 obtainableItems = ['stone|🔘', 'wood|🟫', 'craft|💠', 'furnace|🧮', 'iron|🟪']
@@ -45,4 +45,4 @@ def objEncounterCheck(terrainMap, xCord, yCord, listInv, bckpTerrain): # Check i
             mapLog(terrainMap)
             hbLog(listInv)
             print('\nYou Died by Stepping On Lava!')
-            return callLog['']
+            callLog['game'] = 'quit'

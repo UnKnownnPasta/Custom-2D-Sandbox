@@ -49,6 +49,9 @@ terrainTwo += ['T-1', {'dropcount':0}]
 terrainThree += ['T-2', {'dropcount':0}] # Just list identifiers
 caveMap += ['C-0', {'dropcount':0}]
 
+terrainOne[0][0] = '👨'
+x, y = 0, 0
+
 hotbar = ['💓']*9+[' '*11,'👨',' '*11]+['🔲']*9 # just a simpler way of making the list
 inventory = ['🔲']*25
 
@@ -91,7 +94,8 @@ setup = [
     inventory, 
     currentTerrain, 
     errorList, 
-    terrainMapStorage
+    terrainMapStorage,
+    x, y
 ]
 
 
