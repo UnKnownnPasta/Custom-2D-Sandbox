@@ -74,8 +74,25 @@ bckpT3 = deepcopy(terrainThree)
 dx, dy, dxy = randint(14,18), randint(1,3), []
 createCave(dx, dy, terrainTwo, bckpT2)
 
+currentTerrain, errorList, callLog = 0, [], {}
+terrainMapStorage = {
+    't0': terrainOne, 'b0': bckpT1,
+    't1': terrainTwo, 'b1': bckpT2,
+    't2': terrainThree, 'b2': bckpT3,
+    't3': caveMap, 'b3': caveMap # supposed to be backup map
+}
 
-setup = [terrainOne, terrainTwo, terrainThree, caveMap, hotbar, inventory]
+setup = [
+    terrainOne,
+    terrainTwo,
+    terrainThree,
+    caveMap, 
+    hotbar, 
+    inventory, 
+    currentTerrain, 
+    errorList, 
+    terrainMapStorage
+]
 
 
 with open('2DMC/terrainData.csv', mode='w', encoding='utf-8', newline='') as csvfile:
