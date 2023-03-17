@@ -1,0 +1,35 @@
+# Map Textures
+    Grass
+    Sand
+    Tree
+    Water
+    Lava
+    Cave wall
+    Stone
+    Iron
+    Empty walkable space
+
+# Game GUI
+⭐ GUI for starting game
+    hearts
+    player
+    hotbar
+    inventory
+    Crafting Items:
+        - Iron Pick
+        - Furnace
+        - Sword
+        - Pickaxe
+⭐ GUI look for /
+    GUI look for x
+    GUI for keybinds
+⭐ GUI for quick help
+
+# Items
+    Crafting table
+    Furnace
+    Pickaxe (Normal / Iron)
+    User Placeables:
+        - Stone
+        - Wood
+    Iron
