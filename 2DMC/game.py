@@ -27,13 +27,6 @@ for row in reader:
 
 TerrainOne, TerrainTwo, TerrainThree, CaveMap, hotbar, inventory = [list(row) for row in load]
 
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QFont, QIcon, QCursor, QPixmap
-from PyQt5.QtCore import Qt
-import sys
-from pyqt_custom_titlebar_window import CustomTitlebarWindow
-
 class CloseButton(QPushButton):
     def __init__(self, text=None, parent=None):
         super(CloseButton, self).__init__(text, parent)
